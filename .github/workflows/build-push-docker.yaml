@@ -21,4 +21,4 @@ jobs:
         with:
           context: .
           push: true
-          tags: vietan0/dummy-express:latest 
+          tags: ${{ secrets.DOCKER_USERNAME }}/dummy-express:latest 
