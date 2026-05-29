@@ -1,0 +1,14 @@
+services:
+  web:
+    image: vietan0/dummy-express
+    build: .
+    ports:
+      - "8080:8080"
+    container_name: dummy-express-container
+
+  watchtower:
+    image: ghcr.io/nicholas-fedor/watchtower
+    volumes:
+      - /var/run/docker.sock:/var/run/docker.sock
+    command: --interval 30 --cleanup
+    container_name: watchtower-container

@@ -2,10 +2,10 @@ const express = require('express')
 const app = express()
 
 app.get('/', (req, res) => {
-  res.send('<h1>Hello World!</h1>')
+  res.send('<h1>Hello World 2!</h1>')
 })
 
-console.log(1)
+console.log(2)
 const PORT = 8080
 
 app.listen(PORT, () => {
